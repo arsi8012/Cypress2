@@ -2,8 +2,8 @@ const selector = require("../fixtures/selectors.json");
 const data = require("../fixtures/data.json");
 
 Cypress.Commands.add("login", (email, password) => {
-    cy.get('[for="email"] > .login__input').type(email);
-    cy.get('[for="pwd"] > .login__input').type(password);
+    cy.get(selector.mail).type(email);
+    cy.get(selector.pass).type(password);
     cy.get(selector.login).click();
 });
 
@@ -14,8 +14,8 @@ Cypress.Commands.add("addNewHall", (nameNewHall) => {
 });
 
 Cypress.Commands.add("delNewHall", () => {
-    cy.get('[data-hall-name="Зал 4"]').click();
+    cy.get(selector.hall1).click();
     cy.get(selector.delHall).click();
-    cy.get('[data-hall-name="Зал 5"]').click();
+    cy.get(selector.hall2).click();
     cy.get(selector.delHall).click();
 });

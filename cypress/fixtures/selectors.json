@@ -9,5 +9,9 @@
   "settingsSave": "#price-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
   "closeButton": "#start-sales > .text-center > .conf-step__button",
   "saveButton": "#hall-configuration > .conf-step__wrapper > .conf-step__buttons > .conf-step__button-accent",
-  "closeHall": "#start-sales > [style='display: block;'] > .conf-step__selectors-box > :nth-child(4) > .conf-step__radio"
+  "closeHall": "#start-sales > [style='display: block;'] > .conf-step__selectors-box > :nth-child(4) > .conf-step__radio",
+  "mail": "[for='email'] > .login__input",
+  "pass": "[for='pwd'] > .login__input",
+  "hall1": "[data-hall-name='Hall4']",
+  "hall2": "[data-hall-name='Hall5']"
 }
